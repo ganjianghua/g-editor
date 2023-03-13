@@ -1,11 +1,11 @@
 export const component = [
   {
-    type: "image",
-    name: "图片",
+    type: 'image',
+    name: '图片',
     config: {
-      src: "",
+      src: '',
       width: -1,
-      height: -1,
-    },
-  },
-];
+      height: -1
+    }
+  }
+]

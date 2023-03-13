@@ -1,30 +1,31 @@
-import { Emitter } from "../../utils/Emitter";
+import { Emitter } from '../../utils/Emitter'
 
 interface Events {
-  add: [];
+  add: []
 }
 
 export class EditorModel extends Emitter<Events> {
-  private modules: any[] = [];
+  private readonly modules: any[] = []
 
-  constructor() {
-    super();
-    this.modules = [];
+  constructor () {
+    super()
+    this.modules = []
   }
 
-  public addBrick() {
+  public addBrick () {
     this.modules.push({
-      type: "image",
-      name: "图片",
+      type: 'image',
+      name: '图片',
       config: {
-        src: "",
+        src: '',
         width: -1,
-        height: -1,
-      },
-    });
-    this.emit('add');
+        height: -1
+      }
+    })
+    this.emit('add')
   }
-  public getModules() {
-    return this.modules;
+
+  public getModules () {
+    return this.modules
   }
 }

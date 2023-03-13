@@ -1,12 +1,12 @@
-import "./App.css";
-import { Editor } from "./Editor";
+import React from 'react'
+import { Editor } from './editor'
 
-function App() {
+function App () {
   return (
     <div className="App">
       <Editor />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
