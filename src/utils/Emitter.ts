@@ -1,48 +1,48 @@
 /**
  * @file Emitter 事件触发器
  */
-export function mixin (
+export function mixin(
   Base: { prototype: unknown },
   ...args: Array<{ prototype: unknown }>
 ): void {
-  const obj = Base.prototype as Record<string, unknown>
+  const obj = Base.prototype as Record<string, unknown>;
 
   args.forEach((target) => {
-    const prototype = target.prototype as Record<string, unknown>
-    const descriptor = Object.getOwnPropertyDescriptors(prototype)
+    const prototype = target.prototype as Record<string, unknown>;
+    const descriptor = Object.getOwnPropertyDescriptors(prototype);
     Object.keys(descriptor).forEach((key) => {
-      Object.defineProperty(obj, key, descriptor[key])
-    })
-  })
+      Object.defineProperty(obj, key, descriptor[key]);
+    });
+  });
 }
 export type ListenerFunction<
   T extends Record<string, unknown[]>,
   K extends keyof T
-> = (...params: T[K]) => void
+> = (...params: T[K]) => void;
 
 export interface IListenerCacheItem<
   T extends Record<string, unknown[]>,
   K extends keyof T
 > {
-  waiting?: T[K]
-  fn: ListenerFunction<T, K>
+  waiting?: T[K];
+  fn: ListenerFunction<T, K>;
 }
 
 export type ListenerCache<T extends Record<string, unknown[]>> = {
   [K in keyof T]?: Array<IListenerCacheItem<T, K>>;
-}
+};
 
-const EVENT_CACHE_KEY = Symbol('event_cache_key')
+const EVENT_CACHE_KEY = Symbol('event_cache_key');
 
 // 这里因为继承的原因，只能用any
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export class Emitter<T extends Record<string, any>> {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  public static mixin (Fn: { prototype: unknown }): void {
-    mixin(Fn, Emitter)
+  public static mixin(Fn: { prototype: unknown }): void {
+    mixin(Fn, Emitter);
   }
 
-  private [EVENT_CACHE_KEY]?: ListenerCache<T>
+  private [EVENT_CACHE_KEY]?: ListenerCache<T>;
 
   // 添加监听函数
   public addListener<K extends keyof T>(
@@ -50,18 +50,18 @@ export class Emitter<T extends Record<string, any>> {
     listener: ListenerFunction<T, K>
   ): void {
     const map: ListenerCache<T> = (this[EVENT_CACHE_KEY] =
-      (this[EVENT_CACHE_KEY] != null) || {})
+      this[EVENT_CACHE_KEY] != null || {});
 
-    let listeners = map[type]
+    let listeners = map[type];
 
     if (listeners == null) {
-      listeners = []
-      map[type] = listeners
+      listeners = [];
+      map[type] = listeners;
     }
 
     listeners.push({
-      fn: listener
-    })
+      fn: listener,
+    });
   }
 
   // 删除监听函数，不传递listener表示删除当前事件的全部监听函数，不传递type清空全部
@@ -69,110 +69,110 @@ export class Emitter<T extends Record<string, any>> {
     type?: K,
     listener?: ListenerFunction<T, K>
   ): void {
-    const map = this[EVENT_CACHE_KEY]
+    const map = this[EVENT_CACHE_KEY];
 
     if (type == null || map == null) {
-      this[EVENT_CACHE_KEY] = {}
-      return
+      this[EVENT_CACHE_KEY] = {};
+      return;
     }
 
-    const listeners = map[type]
+    const listeners = map[type];
 
     if (listeners == null) {
-      return
+      return;
     }
 
     if (listener == null) {
-      delete map[type]
-      return
+      delete map[type];
+      return;
     }
 
-    const index = listeners.findIndex((item) => item.fn === listener)
+    const index = listeners.findIndex((item) => item.fn === listener);
 
     if (index >= 0) {
-      listeners.splice(index, 1)
+      listeners.splice(index, 1);
     }
   }
 
   // 删除所有监听函数，删除当前事件的全部监听函数，不传递type清空全部
   public removeAllListeners<K extends keyof T>(type?: K): void {
-    this.removeListener(type)
+    this.removeListener(type);
   }
 
   // 触发事件
   public emit<K extends keyof T>(type: K, ...params: T[K]): void {
     const map: ListenerCache<T> = (this[EVENT_CACHE_KEY] =
-      (this[EVENT_CACHE_KEY] != null) || {})
-    const listeners: undefined | Array<IListenerCacheItem<T, K>> = map[type]
+      this[EVENT_CACHE_KEY] != null || {});
+    const listeners: undefined | Array<IListenerCacheItem<T, K>> = map[type];
 
     if (listeners == null) {
-      return
+      return;
     }
 
     for (const listener of listeners) {
-      listener.fn.apply(this, params)
+      listener.fn.apply(this, params);
     }
   }
 
   // 延时触发事件，直到下一次commit
   public waitForCommit<K extends keyof T>(type: K, ...params: T[K]): void {
     const map: ListenerCache<T> = (this[EVENT_CACHE_KEY] =
-      (this[EVENT_CACHE_KEY] != null) || {})
-    const listeners: undefined | Array<IListenerCacheItem<T, K>> = map[type]
+      this[EVENT_CACHE_KEY] != null || {});
+    const listeners: undefined | Array<IListenerCacheItem<T, K>> = map[type];
 
     if (listeners == null) {
-      return
+      return;
     }
 
     for (const listener of listeners) {
-      listener.waiting = params
+      listener.waiting = params;
     }
   }
 
   // 提交所有的延时触发的事件
-  public commit (): void {
+  public commit(): void {
     const map: ListenerCache<T> = (this[EVENT_CACHE_KEY] =
-      (this[EVENT_CACHE_KEY] != null) || {})
+      this[EVENT_CACHE_KEY] != null || {});
     Object.keys(map).forEach((key) => {
-      const k = key as keyof T
+      const k = key as keyof T;
       const listeners: undefined | Array<IListenerCacheItem<T, keyof T>> =
-        map[k]
+        map[k];
 
       if (listeners == null) {
-        return
+        return;
       }
 
       for (const listener of listeners) {
         if (listener.waiting != null) {
-          listener.fn(...(listener.waiting as any))
-          listener.waiting = void 0
+          listener.fn(...(listener.waiting as any));
+          listener.waiting = void 0;
         }
       }
-    })
+    });
   }
 
   // 获取所有监听函数
   public listeners<K extends keyof T>(type: K): Array<ListenerFunction<T, K>> {
     const map: ListenerCache<T> = (this[EVENT_CACHE_KEY] =
-      (this[EVENT_CACHE_KEY] != null) || {})
-    const listeners: undefined | Array<IListenerCacheItem<T, K>> = map[type]
+      this[EVENT_CACHE_KEY] != null || {});
+    const listeners: undefined | Array<IListenerCacheItem<T, K>> = map[type];
 
     if (listeners == null) {
-      return []
+      return [];
     }
 
-    return listeners.map((item) => item.fn)
+    return listeners.map((item) => item.fn);
   }
 
   public listenerCount<K extends keyof T>(type: K): number {
     const map: ListenerCache<T> = (this[EVENT_CACHE_KEY] =
-      (this[EVENT_CACHE_KEY] != null) || {})
-    const listeners = map[type]
+      this[EVENT_CACHE_KEY] != null || {});
+    const listeners = map[type];
 
     if (listeners == null) {
-      return 0
+      return 0;
     }
 
-    return listeners.length
+    return listeners.length;
   }
 }

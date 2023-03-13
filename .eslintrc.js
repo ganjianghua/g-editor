@@ -18,5 +18,6 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 0,
     '@typescript-eslint/no-dynamic-delete': 0,
     'no-void': 0,
+    '@typescript-eslint/space-before-function-paren': 0,
   },
 };

@@ -210,6 +210,16 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
+"@co-hooks/emitter@^1.0.11":
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/@co-hooks/emitter/-/emitter-1.0.11.tgz#02cbdcdebe7e185ce67d00bc56c697eccb61a8fa"
+  integrity sha512-6yUdykc24K54MLLYzSCmjoa33yeHWIYSHe3Djuq7n9R7P7T38N1qgp2x7JibcEoDgK3B3H3fd6kJaGPYzagKUg==
+
+"@co-hooks/util@^1.0.11":
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/@co-hooks/util/-/util-1.0.11.tgz#a3b33357f8c09f234f423368121a6c002e037c0b"
+  integrity sha512-B74GPdFk5kmNCnzOoyuu+sS+w1eXnm88uhb6Gf+H4qxVzXh++HcFoBMCRmlhAONSDoIeskKKn8mxOrZFy5f9gw==
+
 "@commitlint/cli@^17.4.4":
   version "17.4.4"
   resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-17.4.4.tgz#36df08bfa31dbb9a2b6b1d7187a31e578f001a06"
