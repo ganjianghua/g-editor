@@ -1,15 +1,15 @@
-import { Emitter } from '../../utils/Emitter'
+import { Emitter } from '../../utils/Emitter';
 
 interface Events {
-  add: []
+  add: [];
 }
 
 export class EditorModel extends Emitter<Events> {
-  private readonly modules: any[] = []
+  private readonly modules: any[] = [];
 
   constructor() {
-    super()
-    this.modules = []
+    super();
+    this.modules = [];
   }
 
   public addBrick() {
@@ -19,13 +19,13 @@ export class EditorModel extends Emitter<Events> {
       config: {
         src: '',
         width: -1,
-        height: -1
-      }
-    })
-    this.emit('add')
+        height: -1,
+      },
+    });
+    this.emit('add');
   }
 
   public getModules() {
-    return this.modules
+    return this.modules;
   }
 }

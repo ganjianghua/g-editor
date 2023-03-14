@@ -20,5 +20,8 @@ module.exports = {
     'no-void': 0,
     '@typescript-eslint/space-before-function-paren': 0,
     'react/react-in-jsx-scope': 0,
+    '@typescript-eslint/semi': 0,
+    '@typescript-eslint/comma-dangle': 0,
+    '@typescript-eslint/member-delimiter-style': 0,
   },
 };
