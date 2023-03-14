@@ -7,12 +7,12 @@ interface Events {
 export class EditorModel extends Emitter<Events> {
   private readonly modules: any[] = []
 
-  constructor () {
+  constructor() {
     super()
     this.modules = []
   }
 
-  public addBrick () {
+  public addBrick() {
     this.modules.push({
       type: 'image',
       name: '图片',
@@ -25,7 +25,7 @@ export class EditorModel extends Emitter<Events> {
     this.emit('add')
   }
 
-  public getModules () {
+  public getModules() {
     return this.modules
   }
 }

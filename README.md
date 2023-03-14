@@ -6,3 +6,6 @@
  npx eslint --init
  # husky
  添加commit钩子 husky add .husky/pre-commit "yarn run lint-staged"
+
+ # github 
+ https://github.com/ganjianghua/g-editor.git

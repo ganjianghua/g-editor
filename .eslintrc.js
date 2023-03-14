@@ -19,5 +19,6 @@ module.exports = {
     '@typescript-eslint/no-dynamic-delete': 0,
     'no-void': 0,
     '@typescript-eslint/space-before-function-paren': 0,
+    'react/react-in-jsx-scope': 0,
   },
 };
