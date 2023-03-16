@@ -1,7 +1,7 @@
 {
-  "name": "vite-react-ts",
+  "name": "h5-editor",
   "version": "1.0.0",
-  "description": "",
+  "description": "h5建站平台",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
@@ -10,10 +10,11 @@
     "lint": "lint-staged",
     "prepare": "husky install"
   },
-  "author": "",
+  "author": "ganjianghua",
   "license": "ISC",
   "devDependencies": {
     "@commitlint/config-conventional": "^17.4.4",
+    "@types/lodash-es": "^4.17.7",
     "@types/node": "^18.15.1",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
@@ -40,6 +41,8 @@
     "@co-hooks/emitter": "^1.0.11",
     "@co-hooks/util": "^1.0.11",
     "antd": "^5.3.1",
+    "lodash-es": "^4.17.21",
+    "psd": "^3.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

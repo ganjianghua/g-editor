@@ -1,9 +1,5 @@
-# dependencies
-/node_modules
-
-/coverage
-
-# production
-/build
-/dist
+node_modules
+coverage
+build
+dist
 yarn-error.log

@@ -1,0 +1,794 @@
+{
+  "children": [
+    {
+      "type": "group",
+      "visible": false,
+      "opacity": 1,
+      "blendingMode": "normal",
+      "name": "Version D",
+      "left": 0,
+      "right": 900,
+      "top": 0,
+      "bottom": 600,
+      "height": 600,
+      "width": 900,
+      "children": [
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "Make a change and save.",
+          "left": 275,
+          "right": 636,
+          "top": 435,
+          "bottom": 466,
+          "height": 31,
+          "width": 361,
+          "mask": {},
+          "text": {
+            "value": "Make a change and save.",
+            "font": {
+              "lengthArray": [
+                23
+              ],
+              "styles": [
+                "normal"
+              ],
+              "weights": [
+                "normal"
+              ],
+              "names": [
+                "HelveticaNeue-Light",
+                "AdobeInvisFont",
+                "MyriadPro-Regular"
+              ],
+              "sizes": [
+                33
+              ],
+              "colors": [
+                [
+                  19,
+                  120,
+                  98,
+                  255
+                ]
+              ],
+              "alignment": [
+                "center"
+              ],
+              "textDecoration": [
+                "none"
+              ],
+              "leading": [
+                27.6
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 456,
+              "ty": 459
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "Logo_Glyph",
+          "left": 379,
+          "right": 521,
+          "top": 211,
+          "bottom": 390,
+          "height": 179,
+          "width": 142,
+          "mask": {
+            "top": 211,
+            "left": 379,
+            "bottom": 390,
+            "right": 521,
+            "width": 142,
+            "height": 179,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "Matte",
+          "left": 0,
+          "right": 900,
+          "top": 0,
+          "bottom": 600,
+          "height": 600,
+          "width": 900,
+          "mask": {},
+          "image": {}
+        },
+        {
+          "type": "group",
+          "visible": false,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "Version E",
+          "left": 0,
+          "right": 900,
+          "top": 0,
+          "bottom": 600,
+          "height": 600,
+          "width": 900,
+          "children": [
+            {
+              "type": "layer",
+              "visible": true,
+              "opacity": 1,
+              "blendingMode": "normal",
+              "name": "Make a change and save.",
+              "left": 275,
+              "right": 636,
+              "top": 435,
+              "bottom": 466,
+              "height": 31,
+              "width": 361,
+              "mask": {},
+              "text": {
+                "value": "Make a change and save.",
+                "font": {
+                  "lengthArray": [
+                    23
+                  ],
+                  "styles": [
+                    "normal"
+                  ],
+                  "weights": [
+                    "normal"
+                  ],
+                  "names": [
+                    "HelveticaNeue-Light",
+                    "AdobeInvisFont",
+                    "MyriadPro-Regular"
+                  ],
+                  "sizes": [
+                    33
+                  ],
+                  "colors": [
+                    [
+                      19,
+                      120,
+                      98,
+                      255
+                    ]
+                  ],
+                  "alignment": [
+                    "center"
+                  ],
+                  "textDecoration": [
+                    "none"
+                  ],
+                  "leading": [
+                    27.6
+                  ]
+                },
+                "left": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "transform": {
+                  "xx": 1,
+                  "xy": 0,
+                  "yx": 0,
+                  "yy": 1,
+                  "tx": 456,
+                  "ty": 459
+                }
+              },
+              "image": {}
+            },
+            {
+              "type": "layer",
+              "visible": true,
+              "opacity": 1,
+              "blendingMode": "normal",
+              "name": "Logo_Glyph",
+              "left": 379,
+              "right": 521,
+              "top": 211,
+              "bottom": 390,
+              "height": 179,
+              "width": 142,
+              "mask": {
+                "top": 211,
+                "left": 379,
+                "bottom": 390,
+                "right": 521,
+                "width": 142,
+                "height": 179,
+                "defaultColor": 0,
+                "relative": false,
+                "disabled": false,
+                "invert": false
+              },
+              "image": {}
+            },
+            {
+              "type": "layer",
+              "visible": true,
+              "opacity": 1,
+              "blendingMode": "normal",
+              "name": "Matte",
+              "left": 0,
+              "right": 900,
+              "top": 0,
+              "bottom": 600,
+              "height": 600,
+              "width": 900,
+              "mask": {},
+              "image": {}
+            },
+            {
+              "type": "group",
+              "visible": false,
+              "opacity": 1,
+              "blendingMode": "normal",
+              "name": "Version F",
+              "left": 0,
+              "right": 900,
+              "top": 0,
+              "bottom": 600,
+              "height": 600,
+              "width": 900,
+              "children": [
+                {
+                  "type": "layer",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendingMode": "normal",
+                  "name": "Make a change and save.",
+                  "left": 275,
+                  "right": 636,
+                  "top": 435,
+                  "bottom": 466,
+                  "height": 31,
+                  "width": 361,
+                  "mask": {},
+                  "text": {
+                    "value": "Make a change and save.",
+                    "font": {
+                      "lengthArray": [
+                        23
+                      ],
+                      "styles": [
+                        "normal"
+                      ],
+                      "weights": [
+                        "normal"
+                      ],
+                      "names": [
+                        "HelveticaNeue-Light",
+                        "AdobeInvisFont",
+                        "MyriadPro-Regular"
+                      ],
+                      "sizes": [
+                        33
+                      ],
+                      "colors": [
+                        [
+                          19,
+                          120,
+                          98,
+                          255
+                        ]
+                      ],
+                      "alignment": [
+                        "center"
+                      ],
+                      "textDecoration": [
+                        "none"
+                      ],
+                      "leading": [
+                        27.6
+                      ]
+                    },
+                    "left": 0,
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "transform": {
+                      "xx": 1,
+                      "xy": 0,
+                      "yx": 0,
+                      "yy": 1,
+                      "tx": 456,
+                      "ty": 459
+                    }
+                  },
+                  "image": {}
+                },
+                {
+                  "type": "layer",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendingMode": "normal",
+                  "name": "Logo_Glyph",
+                  "left": 379,
+                  "right": 521,
+                  "top": 211,
+                  "bottom": 390,
+                  "height": 179,
+                  "width": 142,
+                  "mask": {
+                    "top": 211,
+                    "left": 379,
+                    "bottom": 390,
+                    "right": 521,
+                    "width": 142,
+                    "height": 179,
+                    "defaultColor": 0,
+                    "relative": false,
+                    "disabled": false,
+                    "invert": false
+                  },
+                  "image": {}
+                },
+                {
+                  "type": "layer",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendingMode": "normal",
+                  "name": "Matte",
+                  "left": 0,
+                  "right": 900,
+                  "top": 0,
+                  "bottom": 600,
+                  "height": 600,
+                  "width": 900,
+                  "mask": {},
+                  "image": {}
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "visible": false,
+      "opacity": 1,
+      "blendingMode": "normal",
+      "name": "Version C",
+      "left": 0,
+      "right": 900,
+      "top": 0,
+      "bottom": 600,
+      "height": 600,
+      "width": 900,
+      "children": [
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "Make a change and save.",
+          "left": 275,
+          "right": 636,
+          "top": 435,
+          "bottom": 466,
+          "height": 31,
+          "width": 361,
+          "mask": {},
+          "text": {
+            "value": "Make a change and save.",
+            "font": {
+              "lengthArray": [
+                23
+              ],
+              "styles": [
+                "normal"
+              ],
+              "weights": [
+                "normal"
+              ],
+              "names": [
+                "HelveticaNeue-Light",
+                "AdobeInvisFont",
+                "MyriadPro-Regular"
+              ],
+              "sizes": [
+                33
+              ],
+              "colors": [
+                [
+                  19,
+                  120,
+                  98,
+                  255
+                ]
+              ],
+              "alignment": [
+                "center"
+              ],
+              "textDecoration": [
+                "none"
+              ],
+              "leading": [
+                27.6
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 456,
+              "ty": 459
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "Logo_Glyph",
+          "left": 379,
+          "right": 521,
+          "top": 211,
+          "bottom": 390,
+          "height": 179,
+          "width": 142,
+          "mask": {
+            "top": 211,
+            "left": 379,
+            "bottom": 390,
+            "right": 521,
+            "width": 142,
+            "height": 179,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "Matte",
+          "left": 0,
+          "right": 900,
+          "top": 0,
+          "bottom": 600,
+          "height": 600,
+          "width": 900,
+          "mask": {},
+          "image": {}
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "visible": false,
+      "opacity": 1,
+      "blendingMode": "normal",
+      "name": "Version B",
+      "left": 0,
+      "right": 900,
+      "top": 0,
+      "bottom": 600,
+      "height": 600,
+      "width": 900,
+      "children": [
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "Make a change and save.",
+          "left": 275,
+          "right": 636,
+          "top": 435,
+          "bottom": 466,
+          "height": 31,
+          "width": 361,
+          "mask": {},
+          "text": {
+            "value": "Make a change and save.",
+            "font": {
+              "lengthArray": [
+                23
+              ],
+              "styles": [
+                "normal"
+              ],
+              "weights": [
+                "normal"
+              ],
+              "names": [
+                "HelveticaNeue-Light",
+                "AdobeInvisFont",
+                "MyriadPro-Regular"
+              ],
+              "sizes": [
+                33
+              ],
+              "colors": [
+                [
+                  138,
+                  35,
+                  22,
+                  255
+                ]
+              ],
+              "alignment": [
+                "center"
+              ],
+              "textDecoration": [
+                "none"
+              ],
+              "leading": [
+                27.6
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 456,
+              "ty": 459
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "Logo_Glyph",
+          "left": 379,
+          "right": 521,
+          "top": 211,
+          "bottom": 390,
+          "height": 179,
+          "width": 142,
+          "mask": {
+            "top": 211,
+            "left": 379,
+            "bottom": 390,
+            "right": 521,
+            "width": 142,
+            "height": 179,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "Matte",
+          "left": 0,
+          "right": 900,
+          "top": 0,
+          "bottom": 600,
+          "height": 600,
+          "width": 900,
+          "mask": {},
+          "image": {}
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "visible": true,
+      "opacity": 1,
+      "blendingMode": "normal",
+      "name": "Version A",
+      "left": 0,
+      "right": 900,
+      "top": 0,
+      "bottom": 600,
+      "height": 600,
+      "width": 900,
+      "children": [
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "Make a change and save.",
+          "left": 275,
+          "right": 635,
+          "top": 435,
+          "bottom": 466,
+          "height": 31,
+          "width": 360,
+          "mask": {},
+          "text": {
+            "value": "Make a change and save.",
+            "font": {
+              "lengthArray": [
+                23
+              ],
+              "styles": [
+                "normal"
+              ],
+              "weights": [
+                "normal"
+              ],
+              "names": [
+                "HelveticaNeue-Light",
+                "AdobeInvisFont",
+                "MyriadPro-Regular"
+              ],
+              "sizes": [
+                33
+              ],
+              "colors": [
+                [
+                  85,
+                  96,
+                  110,
+                  255
+                ]
+              ],
+              "alignment": [
+                "center"
+              ],
+              "textDecoration": [
+                "none"
+              ],
+              "leading": [
+                27.6
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 456,
+              "ty": 459
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "Logo_Glyph",
+          "left": 379,
+          "right": 521,
+          "top": 211,
+          "bottom": 390,
+          "height": 179,
+          "width": 142,
+          "mask": {
+            "top": 211,
+            "left": 379,
+            "bottom": 390,
+            "right": 521,
+            "width": 142,
+            "height": 179,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "Matte",
+          "left": 0,
+          "right": 900,
+          "top": 0,
+          "bottom": 600,
+          "height": 600,
+          "width": 900,
+          "mask": {},
+          "image": {}
+        }
+      ]
+    }
+  ],
+  "document": {
+    "width": 900,
+    "height": 600,
+    "resources": {
+      "layerComps": [
+        {
+          "id": 692243163,
+          "name": "Version A",
+          "capturedInfo": 1
+        },
+        {
+          "id": 725235304,
+          "name": "Version B",
+          "capturedInfo": 1
+        },
+        {
+          "id": 730932877,
+          "name": "Version C",
+          "capturedInfo": 1
+        }
+      ],
+      "resolutionInfo": {
+        "h_res": 72.00900268554688,
+        "h_res_unit": 1,
+        "width_unit": 1,
+        "v_res": 72.00900268554688,
+        "v_res_unit": 1,
+        "height_unit": 1
+      },
+      "guides": [
+        {
+          "location": "300.0",
+          "direction": "horizontal"
+        },
+        {
+          "location": "450.0",
+          "direction": "vertical"
+        },
+        {
+          "location": "225.0",
+          "direction": "vertical"
+        },
+        {
+          "location": "675.0",
+          "direction": "vertical"
+        },
+        {
+          "location": "450.0",
+          "direction": "horizontal"
+        },
+        {
+          "location": "150.0",
+          "direction": "horizontal"
+        }
+      ],
+      "slices": []
+    }
+  }
+}
