@@ -1,8 +1,8 @@
-const PSD = require('psd');
+const PSD = require('psd')
 
-const psd = PSD.fromFile('../assets/images/example.psd');
+const psd = PSD.fromFile('../assets/images/example.psd')
 
-psd.parse();
+psd.parse()
 
-const tree = psd.tree().export();
-console.log(JSON.stringify(tree));
+const tree = psd.tree().export()
+console.log(JSON.stringify(tree))

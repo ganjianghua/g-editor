@@ -23,5 +23,9 @@ module.exports = {
     '@typescript-eslint/semi': 0,
     '@typescript-eslint/comma-dangle': 0,
     '@typescript-eslint/member-delimiter-style': 0,
+    '@typescript-eslint/prefer-readonly': 0,
+    '@typescript-eslint/no-unused-expressions': 0,
+    '@typescript-eslint/no-confusing-void-expression': 0,
+    '@typescript-eslint/restrict-plus-operands': 0,
   },
 };
